@@ -44,4 +44,11 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# iOS Ignore
+/ios/build/
+/ios/Pods
+/ios/.symlinks
+/ios/Flutter/ephemeral
+/ios/.generated/
+
 app_summary.md
