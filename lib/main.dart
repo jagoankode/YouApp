@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'routes/app_routes.dart';
 import 'controllers/auth_controller.dart';
+import 'widgets/custom_widgets.dart';
 
 void main() {
   Get.put(AuthController()); // init controller
@@ -14,12 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Mock Auth App',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.deepPurple,
-      ),
-      initialRoute: AppRoutes.login,
+      title: 'YouApp',
+      theme: AppTheme.getTheme(),
+      initialRoute: AppRoutes.about,
       getPages: AppRoutes.pages,
       debugShowCheckedModeBanner: false,
     );
